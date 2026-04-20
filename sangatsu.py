@@ -54,13 +54,14 @@ async def on_message(message):
 
         if now.month == 3:
             await message.channel.send(
-                f"{message.author.mention} 今は3月！\n"
-                f"あと{days}日{hours}時間{minutes}分{seconds}秒で終わる！"
+                f"{message.author.mention} おめでとう！今は3月だよ！\n"
+                f"この時間を思う存分楽しもう！\n"
+                f"～3月が終わるまであと{days}日{hours}時間{minutes}分{seconds}秒～"
             )
         else:
             await message.channel.send(
-                f"{message.author.mention} 今は{now.month}月！\n"
-                f"3月まであと{days}日{hours}時間{minutes}分{seconds}秒！"
+                f"{message.author.mention} ちょっと待って！今は{now.month}月だよ。\n"
+                f"～3月まであと{days}日{hours}時間{minutes}分{seconds}秒～"
             )
 
     await bot.process_commands(message)
