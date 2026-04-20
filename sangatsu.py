@@ -37,7 +37,6 @@ FOOTER_LINES = [
     "3月はまだ準備中らしい。",
     "落ち着いて、気持ちが先走っているよ。",
     "こっちの時空と少しズレているかも。",
-    "未来を先取りしすぎているね。",
     "そんなにホワイトデーが楽しみかい？",
     "その3月への執念、少し尊敬する。",
 ]
@@ -76,10 +75,11 @@ async def on_message(message):
         roll = random.random()
 
         # 5%：3月警察
-        if roll < 0.02:
+        if roll < 0.05:
             await message.channel.send(
                 f"{message.author.mention} ⚠️ﾋﾟﾋﾟｰ‼️3月警察だ‼️👮\n"
-                f"3月虚偽親告罪により逮捕する‼️。\n"
+                f"3月虚偽親告罪により逮捕する‼️\n"
+                f"𝒀𝑶𝑼 𝑩𝑼𝑺𝑻𝑬𝑫\n"
                 f"{countdown}"
             )
 
