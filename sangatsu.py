@@ -74,15 +74,15 @@ async def on_message(message):
 
         roll = random.random()
 
-        # 5%：3月警察
-        if roll < 0.05:
+        # 3%：3月警察
+        if roll < 0.03:
             await message.channel.send(
                 f"{message.author.mention} ⚠️ﾋﾟﾋﾟｰ‼️3月警察だ‼️👮\n"
                 f"3月虚偽親告罪により逮捕する‼️\n"
                 f"{countdown}"
             )
 
-        # 95%：通常
+        # 97%：通常
         else:
             footer = random.choice(FOOTER_LINES)
 
