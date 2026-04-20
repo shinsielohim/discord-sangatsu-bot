@@ -79,7 +79,6 @@ async def on_message(message):
             await message.channel.send(
                 f"{message.author.mention} ⚠️ﾋﾟﾋﾟｰ‼️3月警察だ‼️👮\n"
                 f"3月虚偽親告罪により逮捕する‼️\n"
-                f"𝒀𝑶𝑼 𝑩𝑼𝑺𝑻𝑬𝑫\n"
                 f"{countdown}"
             )
 
